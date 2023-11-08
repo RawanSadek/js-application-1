@@ -1,0 +1,260 @@
+@font-face {
+    font-family: titleFont;
+    src: url(LeagueScript-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    height: 100vh;
+    background-image: url(../Images/background2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+.header{
+    height: 85px;
+    padding: 10px 10%;
+    background-color: rgba(0, 0, 0,0.8);
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.header h1{
+    display: inline;
+    font-size: 55px;
+    margin-left: 10px;
+    color: white;
+    font-family: titleFont;
+}
+
+.logo img{
+    width: 20px;
+    height: 40px;
+    margin-top: -15px;
+}
+
+.header ul{
+    margin-left: auto;
+}
+
+.header ul li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.header ul li .nav-link{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.header ul li .nav-link:hover{
+    opacity: 0.6;
+}
+
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+}
+ 
+.home-overlay-content{
+    width: 70%;
+    margin: auto;
+    margin-top: 250px;
+    text-align: center;
+    
+}
+
+.home-overlay-content h2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.6;
+}
+
+.home-overlay-content p{
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 30px 0;
+    opacity: 0.6;
+}
+
+.home-overlay-content button{
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    opacity: 0.6;
+}
+
+.home-overlay-content button:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
+
+
+.products{
+    margin: auto;
+}
+.items-title{
+    font-size: 60px;
+    color: rgb(191,136,110);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.line{
+    width: 200px;
+    background-color: rgb(191,136,110);
+    height: 5px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.image img{
+    height: 300px;
+    width: 100%;
+}
+
+
+.item-content .name{
+    color: rgb(191,136,110);
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item-content .name:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.item-content .name:active{
+    opacity: 0.5;
+}
+
+.item-content .price{
+    color: white;
+    opacity: 0.6;
+    text-transform: uppercase;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.image{
+    position: relative;
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.add-to-cart{
+    width: 150px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 50%;
+    transform: translate(0,-50%);
+    color: rgb(191,136,110);
+    
+}
+
+.image-overlay .add-to-cart i{
+    font-size: 35px;
+}
+
+.image-overlay .add-to-cart p{
+    font-size: 25px;
+}
+
+.image:hover .image-overlay{
+    opacity: 1;
+    visibility: visible;
+}
+
+.add-to-cart:hover{
+    color: rgb(191,136,110,0.7);
+    cursor: pointer;
+}
+
+
+
+
+/* *********************************************************************************************** */
+
+.cart{
+    background-color: black;
+    padding: 100px 0 200px;
+}
+
+.cart-items{
+    border: 2px solid rgb(191,136,110);
+    padding: 20px;
+    color: rgb(191, 153, 110);
+    font-size: 18px;
+}
+
+.cart-items i{
+    margin: 20px;
+}
+
+.cart button{
+    width: 100px;
+    height: 40px;
+    display: block;
+    background-color: transparent;
+    border: 2px solid rgb(191,136,110);
+    border-radius: 20px;
+    color: rgb(191,136,110);
+    padding: 5px;
+    margin: 50px auto;
+    display: none;
+}
+
+.cart button:hover{
+    opacity: 0.8;
+}
+
+.cart button:active{
+    opacity: 0.5;
+}
+
+.show-price{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
